@@ -16,6 +16,8 @@ flat assembler  version 1.73.32  (16384 kilobytes memory) 3 passes, 1123 bytes.
 $ file virus_elf
 virus_elf: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, no section header
 
+$ gcc test.c -o test -no-pie
+
 $ echo -n 544d5a00 | xxd -r -p -s +0x9 - virus_elf
 
 $ chmod 777 ./virus_elf
