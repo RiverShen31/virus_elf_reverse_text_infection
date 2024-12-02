@@ -11,7 +11,7 @@
 Được viết bằng FASM x64
 ```
 $ fasm virus_elf.asm
-flat assembler  version 1.73.32  (16384 kilobytes memory) 3 passes, 1123 bytes.
+flat assembler  version 1.73.32  (16384 kilobytes memory) 3 passes, 988 bytes.
 
 $ file virus_elf
 virus_elf: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, no section header
@@ -22,3 +22,6 @@ $ echo -n 544d5a00 | xxd -r -p -s +0x9 - virus_elf
 
 $ chmod 777 ./virus_elf
 ```
+
+# DEMO
+![Thực hiện lây nhiễm](images/Screenshot%202024-12-02%20091612.png "Ảnh minh họa")
